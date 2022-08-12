@@ -48,6 +48,27 @@ class UserController {
     }
   }
 
+  static async loginAllUser(req, res, next) {
+    try {
+      const { email, password } = req.body;
+      const user = await User.findOne({
+        where: { email },
+      });
+      if (!user) return next({ name: "UserNotFound" });
+      if (!verifyPassword(password, user.password)) {
+        return next({ name: "UserNotFound" });
+      }
+      const token = signPayload({
+        id: user.id,
+        email: user.email,
+        role: user.role,
+      });
+      res.status(200).json({ message: "Login success", access_token: token });
+    } catch (err) {
+      next(err);
+    }
+  }
+
   static async getUsers(req, res, next) {
     try {
       const response = await User.findAll();

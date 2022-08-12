@@ -6,6 +6,7 @@ const deleteAuthorization = require("../middlewares/DeleteAuthorization");
 
 router.post("/register", UserController.registerUser);
 router.post("/login", UserController.loginAdmin);
+router.post("/login-all", UserController.loginAllUser);
 router.use(authentication);
 
 router.get("/users", UserController.getUsers);

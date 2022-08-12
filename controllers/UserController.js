@@ -67,6 +67,53 @@ class UserController {
       next(err);
     }
   }
+
+  static async updateUser(req, res, next) {
+    try {
+      const {
+        firstName,
+        lastName,
+        role,
+        email,
+        password,
+        phoneNumber,
+        address,
+        position,
+      } = req.body;
+      const { id } = req.params;
+      const findUser = await User.findByPk(id);
+      if (!findUser) return next({ name: "UserNotFound" });
+      const updateUser = await User.update(
+        {
+          ...req.body,
+        },
+        {
+          where: { id },
+        }
+      );
+      res
+        .status(200)
+        .json({ message: `Successfully updating user ${findUser.id}` });
+    } catch (err) {
+      next(err);
+    }
+  }
+
+  static async deleteUser(req, res, next) {
+    try {
+      const { id } = req.params;
+      const findUser = await User.findByPk(id);
+      if (!findUser) return next({ name: "UserNotFound" });
+      const deleteUser = await User.destroy({
+        where: { id },
+      });
+      res
+        .status(200)
+        .json({ message: `Successfully deleting user ${findUser.id}` });
+    } catch (err) {
+      next(err);
+    }
+  }
 }
 
 module.exports = UserController;

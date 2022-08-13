@@ -30,5 +30,45 @@
       "address": "Jalanan deket sana",
       "position": "Product Manager"
     }
+  ],
+  "officialLetters": [
+    {
+      "UserId": 2,
+      "activityName": "Visit Perkebunan",
+      "from": "Jakarta",
+      "to": "Solo",
+      "leaveDate": "17/08/2022",
+      "returnDate": "20/08/2022",
+      "status": "Pending"
+    },
+    {
+      "UserId": 2,
+      "activityName": "Meeting client",
+      "from": "Jakarta",
+      "to": "Bandung",
+      "leaveDate": "23/08/2022",
+      "returnDate": "25/08/2022",
+      "status": "Pending"
+    }
+  ],
+  "reimbursements": [
+    {
+      "OfficialLetterId": 1,
+      "description": "Biaya tambahan selama perjalanan",
+      "cost": 100000,
+      "image": "https://1.bp.blogspot.com/-G6ZjV85sbCA/X0I99BxGW3I/AAAAAAAAGCY/Yz8iFmjK9VYcAvxjGlxdsFmFIVSdp-CqACLcBGAsYHQ/s1280/struk%2Btoken5.jpg",
+      "category": "Transportation",
+      "status": "Pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "OfficialLetterId": 2,
+      "description": "Biaya tambahan selama perjalanan",
+      "cost": 102000,
+      "image": "https://1.bp.blogspot.com/-PbLm5rDM1e4/X0I992G63kI/AAAAAAAAGCc/4c2MXw5A9rkJKW2prbSQohJu9cUgvn1hgCLcBGAsYHQ/s1280/struk%2Btoken6.jpg",
+      "category": "Transportation",
+      "status": "Pending",
+      "updatedBy": "Bagas Bagus"
+    }
   ]
 }

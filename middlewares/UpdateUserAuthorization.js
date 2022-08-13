@@ -8,10 +8,10 @@ const authorization = async (req, res, next) => {
     if (req.user.role != "Super Admin" && req.user.role != "Admin") {
       return next({ name: "Forbidden" });
     }
-    next()
+    next();
   } catch (err) {
     next(err);
   }
 };
 
-module.exports = authorization
+module.exports = authorization;

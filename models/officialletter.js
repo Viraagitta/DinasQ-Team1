@@ -9,16 +9,61 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      OfficialLetter.belongsTo(models.User, {
+        foreignKey: "UserId",
+      });
+      OfficialLetter.hasMany(models.Reimbursement, {
+        foreignKey: "OfficialLetterId",
+      });
     }
   }
   OfficialLetter.init(
     {
       UserId: DataTypes.INTEGER,
-      activityName: DataTypes.STRING,
-      from: DataTypes.STRING,
-      to: DataTypes.STRING,
-      leaveDate: DataTypes.STRING,
-      returnDate: DataTypes.STRING,
+      activityName: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notNull: { msg: "Please insert activity name" },
+          notEmpty: { msg: "Please insert activity name" },
+        },
+      },
+      from: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notNull: { msg: "Please insert your origin" },
+          notEmpty: { msg: "Please insert your origin" },
+        },
+      },
+      to: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notNull: { msg: "Please insert destination" },
+          notEmpty: { msg: "Please insert destination" },
+        },
+      },
+      leaveDate: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notNull: { msg: "Please insert leave date" },
+          notEmpty: { msg: "Please insert leave date" },
+        },
+      },
+      returnDate: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notNull: { msg: "Please insert return date" },
+          notEmpty: { msg: "Please insert return date" },
+        },
+      },
+      status: {
+        type: DataTypes.STRING,
+        defaultValue: "Pending",
+      },
     },
     {
       sequelize,

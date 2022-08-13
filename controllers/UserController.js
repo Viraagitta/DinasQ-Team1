@@ -1,4 +1,4 @@
-const { User } = require("../models");
+const { User, OfficialLetter, Reimbursement } = require("../models");
 const { verifyPassword } = require("../helpers/bcrypt");
 const { signPayload } = require("../helpers/jwt");
 
@@ -72,6 +72,26 @@ class UserController {
   static async getUsers(req, res, next) {
     try {
       const response = await User.findAll();
+      res.status(200).json(response);
+    } catch (err) {
+      next(err);
+    }
+  }
+
+  static async getAllUsersDetails(req, res, next) {
+    try {
+      const response = await User.findAll({
+        include: [
+          {
+            model: OfficialLetter,
+            include: [
+              {
+                model: Reimbursement,
+              },
+            ],
+          },
+        ],
+      });
       res.status(200).json(response);
     } catch (err) {
       next(err);

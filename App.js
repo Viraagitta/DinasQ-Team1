@@ -1,12 +1,16 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 3000;
+const routes = require("./routes/UserRoute");
+const errorHandler = require("./middlewares/ErrorHandler");
 
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.get("/", (req, res) => res.send("Udah connect"));
+app.use(routes);
+app.use(errorHandler);
 
 app.listen(PORT, () => console.log(`Successfully connected to port ${PORT}`));

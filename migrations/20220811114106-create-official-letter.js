@@ -17,13 +17,19 @@ module.exports = {
         onDelete: "cascade",
         onUpdate: "cascade",
       },
+      activityName: {
+        type: Sequelize.STRING,
+      },
       from: {
         type: Sequelize.STRING,
       },
       to: {
         type: Sequelize.STRING,
       },
-      date: {
+      leaveDate: {
+        type: Sequelize.STRING,
+      },
+      returnDate: {
         type: Sequelize.STRING,
       },
       createdAt: {

@@ -1,4 +1,5 @@
 const errorHandler = (err, req, res, next) => {
+  console.log(err);
   switch (err.name) {
     case "SequelizeValidationError":
       res.status(400).json({ message: err.errors[0].message });
@@ -22,6 +23,12 @@ const errorHandler = (err, req, res, next) => {
       break;
     case "Forbidden":
       res.status(403).json({ mesasge: "Your are not authorized" });
+      break;
+    case "LetterNotFound":
+      res.status(404).json({ message: "Official letter not found" });
+      break;
+    case "ReimbusemenetNotFound":
+      res.status(404).json({ message: "Reimbursemenet not found" });
       break;
     default:
       res.status(500).json({ message: "Internal server error" });

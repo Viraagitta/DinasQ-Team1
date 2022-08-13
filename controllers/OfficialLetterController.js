@@ -26,7 +26,9 @@ class OfficialLetterController {
   static async getOfficialLetterById(req, res, next) {
     try {
       const { id } = req.params;
-      const response = await OfficialLetter.findByPk(id);
+      const response = await OfficialLetter.findByPk(id, {
+        include: [Reimbursement]
+      });
       if (!response) return next({ name: "LetterNotFound" });
       res.status(200).json(response);
     } catch (err) {

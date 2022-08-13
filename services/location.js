@@ -29,7 +29,13 @@ const getGeocode = async () => {
 }
 
 // getGeocode()
-// .then(geo => getCityName(geo))
+// .then(geo => {
+//     console.log(geo)
+//     return getCityName(geo)})
+// .then(city => {
+//     console.log(city)
+// })
 // .catch(err => console.log(err))
+
 
 module.exports = {getGeocode, getCityName}

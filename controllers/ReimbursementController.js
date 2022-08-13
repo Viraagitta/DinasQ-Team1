@@ -61,11 +61,9 @@ class ReimbursementController {
         },
         { where: { id } }
       );
-      res
-        .status(201)
-        .json({
-          message: `Reimbursement status id ${id} has been updated to ${status}`,
-        });
+      res.status(201).json({
+        message: `Reimbursement status id ${id} has been updated to ${status}`,
+      });
     } catch (err) {
       next(err);
     }

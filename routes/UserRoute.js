@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const UserController = require("../controllers/UserController");
-const updateAuthorization = require("../middlewares/UpdateAuthorization");
+const updateAuthorization = require("../middlewares/UpdateUserAuthorization");
 const deleteAuthorization = require("../middlewares/DeleteAuthorization");
 
 router.get("/usersdetails", UserController.getAllUsersDetails);

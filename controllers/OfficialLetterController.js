@@ -51,6 +51,27 @@ class OfficialLetterController {
       next(err);
     }
   }
+
+  static async updateStatusLetter(req, res, next) {
+    try {
+      const { id } = req.params;
+      const { status } = req.body;
+      const letter = await OfficialLetter.findByPk(id);
+      if (!letter) return next({ name: "LetterNotFound" });
+      const updateStatus = await OfficialLetter.update(
+        {
+          status,
+          updatedAt: new Date(),
+        },
+        { where: { id } }
+      );
+      res.status(201).json({
+        message: `Official letter status ${id} has been updated to ${status}`,
+      });
+    } catch (err) {
+      next(err);
+    }
+  }
 }
 
 module.exports = OfficialLetterController;

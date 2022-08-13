@@ -7,5 +7,9 @@ router.get(
   OfficialLetterController.getOfficialLetterById
 );
 router.post("/officialletters", OfficialLetterController.createOfficialLetter);
+router.patch(
+  "/officialletters/:id",
+  OfficialLetterController.updateStatusLetter
+);
 
-module.exports = router
+module.exports = router;

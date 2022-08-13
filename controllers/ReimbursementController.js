@@ -46,6 +46,30 @@ class ReimbursementController {
       next(err);
     }
   }
+
+  static async updateStatusReimbursement(req, res, next) {
+    try {
+      const { id } = req.params;
+      const { status } = req.body;
+      const updatedBy = req.user.firstName + " " + req.user.lastName;
+      const reimburse = await Reimbursement.findByPk(id);
+      if (!reimburse) return next({ name: "ReimbursementNotFound" });
+      const updateStatus = await Reimbursement.update(
+        {
+          status,
+          updatedBy,
+        },
+        { where: { id } }
+      );
+      res
+        .status(201)
+        .json({
+          message: `Reimbursement status id ${id} has been updated to ${status}`,
+        });
+    } catch (err) {
+      next(err);
+    }
+  }
 }
 
 module.exports = ReimbursementController;

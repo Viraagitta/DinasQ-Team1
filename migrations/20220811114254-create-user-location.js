@@ -17,14 +17,14 @@ module.exports = {
         onDelete: "cascade",
         onUpdate: "cascade",
       },
-      LocationId: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: "Locations",
-          key: "id",
-        },
-        onDelete: "cascade",
-        onUpdate: "cascade",
+      latitude: {
+        type: Sequelize.STRING,
+      },
+      longitude: {
+        type: Sequelize.STRING,
+      },
+      cityName: {
+        type: Sequelize.STRING,
       },
       createdAt: {
         allowNull: false,

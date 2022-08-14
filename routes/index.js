@@ -4,6 +4,7 @@ const authentication = require("../middlewares/authentication");
 const UserRoutes = require("./UserRoute");
 const LetterRoutes = require("./LetterRoute");
 const ReimbursementRoutes = require("./ReimbursementRoute");
+const UserLocationController = require('./UserLocationRoute');
 
 router.post("/register", UserController.registerUser);
 //register
@@ -13,6 +14,7 @@ router.post("/login-all", UserController.loginAllUser);
 //login mobile
 
 router.use(authentication);
+router.use(UserLocationController);
 router.use(UserRoutes);
 router.use(LetterRoutes);
 router.use(ReimbursementRoutes);

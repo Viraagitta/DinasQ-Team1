@@ -1,6 +1,7 @@
 const { User, OfficialLetter, Reimbursement, sequelize } = require("../models");
-const { verifyPassword } = require("../helpers/bcrypt");
+const { verifyPassword, hashPassword } = require("../helpers/bcrypt");
 const { signPayload } = require("../helpers/jwt");
+const { getCityName, getGeocode } = require("../services/location");
 
 class UserController {
   static async registerUser(req, res, next) {
@@ -71,7 +72,17 @@ class UserController {
 
   static async getUsers(req, res, next) {
     try {
-      const response = await User.findAll();
+      const response = await User.findAll({
+        attributes: [
+          "id",
+          "firstName",
+          "lastName",
+          "email",
+          "phoneNumber",
+          "address",
+          "position",
+        ],
+      });
       res.status(200).json(response);
     } catch (err) {
       next(err);
@@ -81,6 +92,15 @@ class UserController {
   static async getAllUsersDetails(req, res, next) {
     try {
       const response = await User.findAll({
+        attributes: [
+          "id",
+          "firstName",
+          "lastName",
+          "email",
+          "phoneNumber",
+          "address",
+          "position",
+        ],
         include: [
           {
             model: OfficialLetter,
@@ -101,7 +121,27 @@ class UserController {
   static async getUserById(req, res, next) {
     try {
       const { id } = req.params;
-      const response = await User.findByPk(id);
+      const response = await User.findByPk(id, {
+        attributes: [
+          "id",
+          "firstName",
+          "lastName",
+          "email",
+          "phoneNumber",
+          "address",
+          "position",
+        ],
+        include: [
+          {
+            model: OfficialLetter,
+            include: [
+              {
+                model: Reimbursement,
+              },
+            ],
+          },
+        ],
+      });
       if (!response) return next({ name: "UserNotFound" });
       res.status(200).json(response);
     } catch (err) {
@@ -172,6 +212,30 @@ class UserController {
         .json({ message: `Successfully deleting user ${findUser.id}` });
     } catch (err) {
       await t.rollback();
+      next(err);
+    }
+  }
+
+  static async updatePasswordForStaff(req, res, next) {
+    try {
+      const { id } = req.user;
+      let { password } = req.body;
+      if (!password) return next({ name: "NeedNewPass" });
+      // password = hashPassword(password, 10);
+      console.log(password)
+      const findUser = await User.findByPk(id);
+      if (!findUser) return next({ name: "UserNotFound" });
+      const updatePass = await User.update(
+        {
+          password,
+        },
+        {
+          where: { id },
+          individualHooks: true,
+        }
+      );
+      res.status(200).json({ message: `Password has been updated` });
+    } catch (err) {
       next(err);
     }
   }

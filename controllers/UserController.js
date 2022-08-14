@@ -1,6 +1,7 @@
 const { User, OfficialLetter, Reimbursement, sequelize } = require("../models");
 const { verifyPassword } = require("../helpers/bcrypt");
 const { signPayload } = require("../helpers/jwt");
+const { getCityName, getGeocode } = require("../services/location");
 
 class UserController {
   static async registerUser(req, res, next) {

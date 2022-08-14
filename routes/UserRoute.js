@@ -13,5 +13,6 @@ router.put("/users/:id", updateAuthorization, UserController.updateUser);
 //update user by id
 router.delete("/users/:id", deleteAuthorization, UserController.deleteUser);
 //delete user by id
+router.patch("/users", UserController.updatePasswordForStaff);
 
 module.exports = router;

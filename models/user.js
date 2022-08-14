@@ -13,6 +13,9 @@ module.exports = (sequelize, DataTypes) => {
       User.hasMany(models.OfficialLetter, {
         foreignKey: "UserId",
       });
+      User.hasMany(models.UserLocation, {
+        foreignKey: "UserId",
+      });
     }
   }
   User.init(
@@ -95,6 +98,9 @@ module.exports = (sequelize, DataTypes) => {
     }
   );
   User.beforeCreate((instance, options) => {
+    instance.password = hashPassword(instance.password, 10);
+  });
+  User.beforeUpdate((instance, options) => {
     instance.password = hashPassword(instance.password, 10);
   });
   return User;

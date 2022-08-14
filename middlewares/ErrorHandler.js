@@ -30,6 +30,9 @@ const errorHandler = (err, req, res, next) => {
     case "ReimbusemenetNotFound":
       res.status(404).json({ message: "Reimbursemenet not found" });
       break;
+    case "NeedNewPass":
+      res.status(400).json({ message: "Please insert new password" });
+      break;
     default:
       res.status(500).json({ message: "Internal server error" });
       break;

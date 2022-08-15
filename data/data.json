@@ -1,0 +1,408 @@
+{
+  "users": [
+    {
+      "firstName": "Windah",
+      "lastName": "Basudara",
+      "role": "Super Admin",
+      "email": "testing@gmail.com",
+      "password": "12345",
+      "phoneNumber": "0812345678",
+      "address": "Jalanan deket situ",
+      "position": "People Strategy"
+    },
+    {
+      "firstName": "Bagas",
+      "lastName": "Bagus",
+      "role": "Admin",
+      "email": "testing2@gmail.com",
+      "password": "12345",
+      "phoneNumber": "0812345678",
+      "address": "Jalanan deket sini",
+      "position": "People Acquisition"
+    },
+    {
+      "firstName": "Dino",
+      "lastName": "Maung",
+      "role": "Staff",
+      "email": "testing3@gmail.com",
+      "password": "12345",
+      "phoneNumber": "0812345678",
+      "address": "Jalanan deket sana",
+      "position": "Product Manager"
+    },
+    {
+      "firstName": "Arifin",
+      "lastName": "Ahmad",
+      "role": "Staff",
+      "email": "testing4@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08127393628",
+      "address": "Jalanan",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Desi",
+      "lastName": "Lestari",
+      "role": "Staff",
+      "email": "testing5@gmail.com",
+      "password": "12345",
+      "phoneNumber": "081236748927",
+      "address": "jl.di hati",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Bunga",
+      "lastName": "Citra Lestari",
+      "role": "Staff",
+      "email": "testing6@gmail.com",
+      "password": "12345",
+      "phoneNumber": "0812638942",
+      "address": "Jl. Haluan",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Aril",
+      "lastName": "Peterpen",
+      "role": "Staff",
+      "email": "testing7@gmail.com",
+      "password": "12345",
+      "phoneNumber": "0812368462",
+      "address": "jl. halu halu",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Judika",
+      "lastName": "Judika",
+      "role": "Staff",
+      "email": "testing8@gmail.com",
+      "password": "12345",
+      "phoneNumber": "0812384782",
+      "address": "Jl. Restu",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Taehyung",
+      "lastName": "Wijaya",
+      "role": "Staff",
+      "email": "testing9@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08123759273",
+      "address": "jl. BTS showcase",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Rose",
+      "lastName": "Blackpink",
+      "role": "Staff",
+      "email": "testing10@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08123831928",
+      "address": "jl. BP showcase",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Lisa",
+      "lastName": "Blackpink",
+      "role": "Staff",
+      "email": "testing11@gmail.com",
+      "password": "12345",
+      "phoneNumber": "0878766283",
+      "address": "jl. BP 2 showcase",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Jungkook",
+      "lastName": "BTS",
+      "role": "Staff",
+      "email": "testing12@gmail.com",
+      "password": "12345",
+      "phoneNumber": "0878738948264",
+      "address": "jl. BTS 2 showcase",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Suzy",
+      "lastName": "Bae",
+      "role": "Staff",
+      "email": "testing13@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08129838492",
+      "address": "jl. Suzy showcase",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Hae",
+      "lastName": "Chan",
+      "role": "Staff",
+      "email": "testing14@gmail.com",
+      "password": "12345",
+      "phoneNumber": "0878237945",
+      "address": "jl. NCT world",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Ronaldino",
+      "lastName": "Pamungkas",
+      "role": "Staff",
+      "email": "testing15@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08299738293",
+      "address": "jl. bola club",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Messi",
+      "lastName": "Ronaldo",
+      "role": "Staff",
+      "email": "testing16@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08199236648",
+      "address": "jl. bola",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Monkey D",
+      "lastName": "Luffy",
+      "role": "Staff",
+      "email": "testing17@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08237284762",
+      "address": "jl. lautan",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Naruto",
+      "lastName": "Uzumaki",
+      "role": "Staff",
+      "email": "testing18@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08763452784",
+      "address": "jl. ninja",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Sasuke",
+      "lastName": "Uchiha",
+      "role": "Staff",
+      "email": "testing19@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08912368618",
+      "address": "jl. ninja uchiha",
+      "position": "Marketing"
+    }
+  ],
+  "officialLetters": [
+    {
+      "UserId": "1",
+      "activityName": "Mengunjungi client project kalimantan",
+      "from": "Jakarta",
+      "to": "Pontianak",
+      "leaveDate": "19/08/2022",
+      "returnDate": "23/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "UserId": "3",
+      "activityName": "Menghadiri undangan dari lembaga industri",
+      "from": "Jakarta",
+      "to": "Surabaya",
+      "leaveDate": "20/08/2022",
+      "returnDate": "24/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "UserId": "2",
+      "activityName": "Mengikuti seminar pengembangan bisnis teknologi",
+      "from": "Jakarta",
+      "to": "Batam",
+      "leaveDate": "22/08/2022",
+      "returnDate": "23/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "UserId": "4",
+      "activityName": "Pembahasan kelanjutan project sulawesi",
+      "from": "Jakarta",
+      "to": "Manado",
+      "leaveDate": "19/08/2022",
+      "returnDate": "25/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "UserId": "5",
+      "activityName": "Pembahasan kelanjutan project sumatera",
+      "from": "Jakarta",
+      "to": "Medan",
+      "leaveDate": "21/08/2022",
+      "returnDate": "28/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "UserId": "2",
+      "activityName": "Pembahasan kelanjutan project papua",
+      "from": "Jakarta",
+      "to": "Papua",
+      "leaveDate": "24/08/2022",
+      "returnDate": "27/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "UserId": "3",
+      "activityName": "Menghadiri undangan dinas perindustrian",
+      "from": "Jakarta",
+      "to": "Bandung",
+      "leaveDate": "23/08/2022",
+      "returnDate": "24/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "UserId": "6",
+      "activityName": "Membahas kelanjutan kontrak kerja",
+      "from": "Jakarta",
+      "to": "Lampung",
+      "leaveDate": "23/08/2022",
+      "returnDate": "25/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "UserId": "10",
+      "activityName": "Membahas kelanjutan kontrak kerja",
+      "from": "Jakarta",
+      "to": "Sukabumi",
+      "leaveDate": "19/08/2022",
+      "returnDate": "22/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "UserId": "11",
+      "activityName": "Membahas kelanjutan kontrak kerja",
+      "from": "Jakarta",
+      "to": "Solo",
+      "leaveDate": "22/08/2022",
+      "returnDate": "24/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "UserId": "13",
+      "activityName": "Membahas kelanjutan kontrak kerja",
+      "from": "Jakarta",
+      "to": "Semarang",
+      "leaveDate": "22/08/2022",
+      "returnDate": "23/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "UserId": "6",
+      "activityName": "Membahas kelanjutan kontrak kerja",
+      "from": "Jakarta",
+      "to": "Palembang",
+      "leaveDate": "26/08/2022",
+      "returnDate": "28/08/2022",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    }
+  ],
+  "reimbursements": [
+    {
+      "OfficialLetterId": "12",
+      "description": "Transportasi travel ke lokasi",
+      "cost": 500000,
+      "image": "https://lh3.googleusercontent.com/p/AF1QipO8hsyZeXKXgfXX1ujKkwFqAmReMDLFi8DYYF9t",
+      "category": "Transport",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "OfficialLetterId": "1",
+      "description": "Hotel 1 malam di pontianak",
+      "cost": 250000,
+      "image": "https://nugrohofebianto.com/wp-content/uploads/2022/01/Hotel-Merpati-Kota-Pontianak-1024x768.jpg",
+      "category": "Accomodation",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "OfficialLetterId": "8",
+      "description": "Hotel 1 malam di lampung",
+      "cost": 110000,
+      "image": "https://www.nesabamedia.com/wp-content/uploads/2019/10/4-1-e1572397987504.png",
+      "category": "Accomodation",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "OfficialLetterId": "9",
+      "description": "Entertaint makan di sukabumi bersama CEO",
+      "cost": 9044000,
+      "image": "https://media.hitekno.com/thumbs/2021/10/25/61276-nota-makan-tahun-1976-instagramasevw/o-img-61276-nota-makan-tahun-1976-instagramasevw.jpg",
+      "category": "Entertaint",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "OfficialLetterId": "6",
+      "description": "Entertaint makan client 19/08/22",
+      "cost": 183000,
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/18/7a/a1/9e/total-cost-for-a-nice.jpg",
+      "category": "Accomodation",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "OfficialLetterId": "4",
+      "description": "Entertaint makan client 20/8/22",
+      "cost": 497600,
+      "image": "https://assets-pergikuliner.com/ktszGhsT4AVRSi4okRLodtb1HsY=/332x0/smart/https://assets-pergikuliner.com/uploads/image/picture/2411657/picture-1642922720.jpg",
+      "category": "Entertaint",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "OfficialLetterId": "5",
+      "description": "Entertaint makan client",
+      "cost": 150700,
+      "image": "https://assets-pergikuliner.com/g2nWDR5yAPHfQ4exPvqvi3IQlhQ=/fit-in/758x598/smart/https://assets-pergikuliner.com/uploads/image/picture/967951/picture-1530078095.JPG",
+      "category": "Entertaint",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "OfficialLetterId": "7",
+      "description": "Entertaint makan client",
+      "cost": 1052700,
+      "image": "https://media-cdn.tripadvisor.com/media/daodao/photo-s/12/6a/ef/22/photo3jpg.jpg",
+      "category": "Entertaint",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "OfficialLetterId": "3",
+      "description": "Rental mobil operasional",
+      "cost": 1330000,
+      "image": "https://bppgi.files.wordpress.com/2014/05/5e673-lpj2bsurvei2bsekarmayang2b2.jpg",
+      "category": "Others",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    },
+    {
+      "OfficialLetterId": "4",
+      "description": "Entertaint makan client 19/08/22",
+      "cost": 1052700,
+      "image": "https://media-cdn.tripadvisor.com/media/daodao/photo-s/12/6a/ef/22/photo3jpg.jpg",
+      "category": "Entertaint",
+      "status": "pending",
+      "updatedBy": "Windah Basudara"
+    }
+  ]
+}

@@ -200,7 +200,7 @@
       "leaveDate": "19/08/2022",
       "returnDate": "23/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "UserId": "3",
@@ -210,7 +210,7 @@
       "leaveDate": "20/08/2022",
       "returnDate": "24/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "UserId": "2",
@@ -220,7 +220,7 @@
       "leaveDate": "22/08/2022",
       "returnDate": "23/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "UserId": "4",
@@ -230,7 +230,7 @@
       "leaveDate": "19/08/2022",
       "returnDate": "25/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "UserId": "5",
@@ -240,7 +240,7 @@
       "leaveDate": "21/08/2022",
       "returnDate": "28/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "UserId": "2",
@@ -250,7 +250,7 @@
       "leaveDate": "24/08/2022",
       "returnDate": "27/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "UserId": "3",
@@ -260,7 +260,7 @@
       "leaveDate": "23/08/2022",
       "returnDate": "24/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "UserId": "6",
@@ -270,7 +270,7 @@
       "leaveDate": "23/08/2022",
       "returnDate": "25/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "UserId": "10",
@@ -280,7 +280,7 @@
       "leaveDate": "19/08/2022",
       "returnDate": "22/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "UserId": "11",
@@ -290,7 +290,7 @@
       "leaveDate": "22/08/2022",
       "returnDate": "24/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "UserId": "13",
@@ -300,7 +300,7 @@
       "leaveDate": "22/08/2022",
       "returnDate": "23/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "UserId": "6",
@@ -310,7 +310,7 @@
       "leaveDate": "26/08/2022",
       "returnDate": "28/08/2022",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     }
   ],
   "reimbursements": [
@@ -321,7 +321,7 @@
       "image": "https://lh3.googleusercontent.com/p/AF1QipO8hsyZeXKXgfXX1ujKkwFqAmReMDLFi8DYYF9t",
       "category": "Transport",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "OfficialLetterId": "1",
@@ -330,7 +330,7 @@
       "image": "https://nugrohofebianto.com/wp-content/uploads/2022/01/Hotel-Merpati-Kota-Pontianak-1024x768.jpg",
       "category": "Accomodation",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "OfficialLetterId": "8",
@@ -339,7 +339,7 @@
       "image": "https://www.nesabamedia.com/wp-content/uploads/2019/10/4-1-e1572397987504.png",
       "category": "Accomodation",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "OfficialLetterId": "9",
@@ -348,7 +348,7 @@
       "image": "https://media.hitekno.com/thumbs/2021/10/25/61276-nota-makan-tahun-1976-instagramasevw/o-img-61276-nota-makan-tahun-1976-instagramasevw.jpg",
       "category": "Entertaint",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "OfficialLetterId": "6",
@@ -357,7 +357,7 @@
       "image": "https://media-cdn.tripadvisor.com/media/photo-s/18/7a/a1/9e/total-cost-for-a-nice.jpg",
       "category": "Accomodation",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "OfficialLetterId": "4",
@@ -366,7 +366,7 @@
       "image": "https://assets-pergikuliner.com/ktszGhsT4AVRSi4okRLodtb1HsY=/332x0/smart/https://assets-pergikuliner.com/uploads/image/picture/2411657/picture-1642922720.jpg",
       "category": "Entertaint",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "OfficialLetterId": "5",
@@ -375,7 +375,7 @@
       "image": "https://assets-pergikuliner.com/g2nWDR5yAPHfQ4exPvqvi3IQlhQ=/fit-in/758x598/smart/https://assets-pergikuliner.com/uploads/image/picture/967951/picture-1530078095.JPG",
       "category": "Entertaint",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "OfficialLetterId": "7",
@@ -384,7 +384,7 @@
       "image": "https://media-cdn.tripadvisor.com/media/daodao/photo-s/12/6a/ef/22/photo3jpg.jpg",
       "category": "Entertaint",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "OfficialLetterId": "3",
@@ -393,7 +393,7 @@
       "image": "https://bppgi.files.wordpress.com/2014/05/5e673-lpj2bsurvei2bsekarmayang2b2.jpg",
       "category": "Others",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     },
     {
       "OfficialLetterId": "4",
@@ -402,7 +402,7 @@
       "image": "https://media-cdn.tripadvisor.com/media/daodao/photo-s/12/6a/ef/22/photo3jpg.jpg",
       "category": "Entertaint",
       "status": "pending",
-      "updatedBy": "Windah Basudara"
+      "updatedBy": "-"
     }
   ]
 }

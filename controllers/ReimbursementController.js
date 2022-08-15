@@ -49,10 +49,9 @@ class ReimbursementController {
       });
       if (!reimbursement) return next({ name: "ReimbursementNotFound" });
 
-      console.log(reimbursement.dataValues, "<<<reimburse")
-
       generatePdf(reimbursement.dataValues)
-
+      
+      res.download('services/report.pdf')
     } catch (error) {
       next(error);
     }

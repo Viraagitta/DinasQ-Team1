@@ -30,8 +30,7 @@ const generatePdf = (data) => {
     doc.line(10, 115, 200, 115);
     doc.line(10, 116, 200, 116);
 
-    doc.save("report.pdf");
-    console.log(data, "<<<<<< generate pdf")
+    doc.save("services/report.pdf");
 }
 
 module.exports = {generatePdf}

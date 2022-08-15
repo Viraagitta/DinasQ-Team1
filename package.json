@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "SET NODE_ENV=test&&jest --forceExit"
+    "test": "SET NODE_ENV=test&&jest --coverage --forceExit --runInBand --verbose"
   },
   "keywords": [],
   "author": "",

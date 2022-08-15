@@ -16,3 +16,5 @@ app.use(errorHandler);
 if(process.env.NODE_ENV !== 'test'){
 app.listen(PORT, () => console.log(`Successfully connected to port ${PORT}`));
 }
+
+module.exports = app

@@ -39,7 +39,7 @@ class OfficialLetterController {
   static async loggedInOfficialLetter(req, res, next) {
     try {
       const UserId = req.user.id;
-      const findLetter = await OfficialLetter.findOne({
+      const findLetter = await OfficialLetter.findAll({
         where: {
           UserId,
         },

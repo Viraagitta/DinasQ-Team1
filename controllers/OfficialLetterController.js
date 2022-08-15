@@ -27,12 +27,27 @@ class OfficialLetterController {
     try {
       const { id } = req.params;
       const response = await OfficialLetter.findByPk(id, {
-        include: [Reimbursement]
+        include: [Reimbursement],
       });
       if (!response) return next({ name: "LetterNotFound" });
       res.status(200).json(response);
     } catch (err) {
       next(err);
+    }
+  }
+
+  static async loggedInOfficialLetter(req, res, next) {
+    try {
+      const UserId = req.user.id;
+      const findLetter = await OfficialLetter.findOne({
+        where: {
+          UserId,
+        },
+        include: [Reimbursement]
+      });
+      res.status(200).json(findLetter);
+    } catch (err) {
+      next(err)
     }
   }
 

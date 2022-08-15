@@ -9,6 +9,8 @@ router.get("/users", UserController.getUsers);
 //fetch all users only
 router.get("/users/:id", UserController.getUserById);
 //fetch user by id
+router.get("/logged-in-user", UserController.loggedInUserDetail);
+//fetch logged in user details
 router.put("/users/:id", updateAuthorization, UserController.updateUser);
 //update user by id
 router.delete("/users/:id", deleteAuthorization, UserController.deleteUser);

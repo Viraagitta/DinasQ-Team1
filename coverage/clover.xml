@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1660641850102" clover="3.2.0">
-  <project timestamp="1660641850102" name="All files">
-    <metrics statements="395" coveredstatements="340" conditionals="78" coveredconditionals="46" methods="49" coveredmethods="42" elements="522" coveredelements="428" complexity="0" loc="395" ncloc="395" packages="7" files="23" classes="23"/>
+<coverage generated="1660656891487" clover="3.2.0">
+  <project timestamp="1660656891487" name="All files">
+    <metrics statements="398" coveredstatements="358" conditionals="84" coveredconditionals="52" methods="49" coveredmethods="45" elements="531" coveredelements="455" complexity="0" loc="398" ncloc="398" packages="7" files="23" classes="23"/>
     <package name="DinasQ-Team1-Server">
       <metrics statements="15" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="0"/>
       <file name="App.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\App.js">
         <metrics statements="15" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="16" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="16" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
       </file>
     </package>
     <package name="DinasQ-Team1-Server.controllers">
-      <metrics statements="168" coveredstatements="140" conditionals="42" coveredconditionals="25" methods="23" coveredmethods="20"/>
+      <metrics statements="169" coveredstatements="156" conditionals="47" coveredconditionals="30" methods="23" coveredmethods="23"/>
       <file name="OfficialLetterController.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\controllers\OfficialLetterController.js">
         <metrics statements="35" coveredstatements="32" conditionals="8" coveredconditionals="5" methods="5" coveredmethods="5"/>
-        <line num="1" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
@@ -61,12 +61,12 @@
         <line num="78" count="1" type="stmt"/>
         <line num="85" count="1" type="stmt"/>
         <line num="89" count="0" type="stmt"/>
-        <line num="94" count="3" type="stmt"/>
+        <line num="94" count="4" type="stmt"/>
       </file>
       <file name="ReimbursementController.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\controllers\ReimbursementController.js">
         <metrics statements="38" coveredstatements="35" conditionals="10" coveredconditionals="5" methods="5" coveredmethods="5"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
@@ -102,14 +102,14 @@
         <line num="86" count="1" type="stmt"/>
         <line num="88" count="1" type="stmt"/>
         <line num="90" count="0" type="stmt"/>
-        <line num="95" count="3" type="stmt"/>
+        <line num="95" count="4" type="stmt"/>
       </file>
       <file name="UserController.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\controllers\UserController.js">
         <metrics statements="76" coveredstatements="70" conditionals="24" coveredconditionals="15" methods="10" coveredmethods="10"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
         <line num="8" count="6" type="stmt"/>
         <line num="18" count="6" type="stmt"/>
         <line num="19" count="6" type="stmt"/>
@@ -181,58 +181,59 @@
         <line num="260" count="2" type="stmt"/>
         <line num="269" count="1" type="stmt"/>
         <line num="271" count="1" type="stmt"/>
-        <line num="276" count="3" type="stmt"/>
+        <line num="276" count="4" type="stmt"/>
       </file>
       <file name="UserLocationController.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\controllers\UserLocationController.js">
-        <metrics statements="19" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="69" count="0" type="stmt"/>
-        <line num="71" count="0" type="stmt"/>
-        <line num="76" count="3" type="stmt"/>
+        <metrics statements="20" coveredstatements="19" conditionals="5" coveredconditionals="5" methods="3" coveredmethods="3"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="5" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="79" count="4" type="stmt"/>
       </file>
     </package>
     <package name="DinasQ-Team1-Server.helpers">
       <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <file name="bcrypt.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\helpers\bcrypt.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
       </file>
       <file name="jwt.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\helpers\jwt.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="28" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="34" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
       </file>
     </package>
     <package name="DinasQ-Team1-Server.middlewares">
-      <metrics statements="58" coveredstatements="45" conditionals="23" coveredconditionals="12" methods="4" coveredmethods="4"/>
+      <metrics statements="60" coveredstatements="47" conditionals="24" coveredconditionals="13" methods="4" coveredmethods="4"/>
       <file name="DeleteAuthorization.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\middlewares\DeleteAuthorization.js">
         <metrics statements="10" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
@@ -240,12 +241,12 @@
         <line num="8" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="9" count="2" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
       </file>
       <file name="ErrorHandler.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\middlewares\ErrorHandler.js">
-        <metrics statements="25" coveredstatements="15" conditionals="11" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="17" type="cond" truecount="6" falsecount="5"/>
+        <metrics statements="27" coveredstatements="17" conditionals="12" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="20" type="cond" truecount="7" falsecount="5"/>
         <line num="5" count="6" type="stmt"/>
         <line num="6" count="6" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
@@ -266,14 +267,16 @@
         <line num="32" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
-        <line num="37" count="7" type="stmt"/>
-        <line num="38" count="7" type="stmt"/>
-        <line num="42" count="3" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="40" count="9" type="stmt"/>
+        <line num="41" count="9" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
       </file>
       <file name="UpdateUserAuthorization.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\middlewares\UpdateUserAuthorization.js">
         <metrics statements="11" coveredstatements="9" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
@@ -282,164 +285,164 @@
         <line num="9" count="0" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
       </file>
       <file name="authentication.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\middlewares\authentication.js">
         <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="28" type="stmt"/>
-        <line num="6" count="28" type="stmt"/>
-        <line num="7" count="28" type="stmt"/>
-        <line num="8" count="27" type="stmt"/>
-        <line num="11" count="27" type="cond" truecount="1" falsecount="1"/>
-        <line num="12" count="27" type="stmt"/>
-        <line num="19" count="27" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="34" type="stmt"/>
+        <line num="6" count="34" type="stmt"/>
+        <line num="7" count="34" type="stmt"/>
+        <line num="8" count="33" type="stmt"/>
+        <line num="11" count="33" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="33" type="stmt"/>
+        <line num="19" count="33" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
       </file>
     </package>
     <package name="DinasQ-Team1-Server.models">
       <metrics statements="47" coveredstatements="46" conditionals="9" coveredconditionals="6" methods="13" coveredmethods="13"/>
       <file name="index.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\models\index.js">
         <metrics statements="20" coveredstatements="19" conditionals="9" coveredconditionals="6" methods="3" coveredmethods="3"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="12" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="12" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="21" count="15" type="cond" truecount="3" falsecount="0"/>
-        <line num="24" count="12" type="stmt"/>
-        <line num="25" count="12" type="stmt"/>
-        <line num="28" count="3" type="stmt"/>
-        <line num="29" count="12" type="cond" truecount="1" falsecount="1"/>
-        <line num="30" count="12" type="stmt"/>
-        <line num="34" count="3" type="stmt"/>
-        <line num="35" count="3" type="stmt"/>
-        <line num="37" count="3" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="21" count="20" type="cond" truecount="3" falsecount="0"/>
+        <line num="24" count="16" type="stmt"/>
+        <line num="25" count="16" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="29" count="16" type="cond" truecount="1" falsecount="1"/>
+        <line num="30" count="16" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
       </file>
       <file name="officialletter.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\models\officialletter.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="78" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="78" count="4" type="stmt"/>
       </file>
       <file name="reimbursement.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\models\reimbursement.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="75" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="75" count="4" type="stmt"/>
       </file>
       <file name="user.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\models\user.js">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="100" count="3" type="stmt"/>
-        <line num="101" count="5" type="stmt"/>
-        <line num="103" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="100" count="4" type="stmt"/>
+        <line num="101" count="7" type="stmt"/>
+        <line num="103" count="4" type="stmt"/>
         <line num="104" count="1" type="stmt"/>
-        <line num="106" count="3" type="stmt"/>
+        <line num="106" count="4" type="stmt"/>
       </file>
       <file name="userlocation.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\models\userlocation.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
       </file>
     </package>
     <package name="DinasQ-Team1-Server.routes">
       <metrics statements="50" coveredstatements="50" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="LetterRoute.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\routes\LetterRoute.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
       </file>
       <file name="ReimbursementRoute.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\routes\ReimbursementRoute.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
       </file>
       <file name="UserLocationRoute.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\routes\UserLocationRoute.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
       </file>
       <file name="UserRoute.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\routes\UserRoute.js">
         <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
       </file>
       <file name="index.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\routes\index.js">
         <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
       </file>
     </package>
     <package name="DinasQ-Team1-Server.services">
       <metrics statements="45" coveredstatements="33" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
       <file name="location.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\services\location.js">
         <metrics statements="17" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
@@ -447,18 +450,18 @@
         <line num="14" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="36" count="3" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
       </file>
       <file name="toPdf.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\services\toPdf.js">
         <metrics statements="28" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
@@ -484,7 +487,7 @@
         <line num="30" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
         <line num="33" count="1" type="stmt"/>
-        <line num="36" count="3" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
       </file>
     </package>
   </project>

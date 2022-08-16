@@ -11,6 +11,10 @@ class OfficialLetterController {
         limit,
         offset,
         include: [Reimbursement],
+        order: [
+          ["id", "DESC"],
+          [Reimbursement, "id", "DESC"],
+        ],
       });
       res.status(200).json({
         totalOfficialLetters: response.count,
@@ -43,11 +47,19 @@ class OfficialLetterController {
         where: {
           UserId,
         },
-        include: [Reimbursement]
+        include: [
+          {
+            model: Reimbursement,
+          },
+        ],
+        order: [
+          ["id", "DESC"],
+          [Reimbursement, "id", "DESC"],
+        ],
       });
       res.status(200).json(findLetter);
     } catch (err) {
-      next(err)
+      next(err);
     }
   }
 
@@ -74,10 +86,12 @@ class OfficialLetterController {
       const { id } = req.params;
       const { status } = req.body;
       const letter = await OfficialLetter.findByPk(id);
+      const updatedBy = req.user.firstName + " " + req.user.lastName;
       if (!letter) return next({ name: "LetterNotFound" });
       const updateStatus = await OfficialLetter.update(
         {
           status,
+          updatedBy,
           updatedAt: new Date(),
         },
         { where: { id } }

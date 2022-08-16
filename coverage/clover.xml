@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1660635127104" clover="3.2.0">
-  <project timestamp="1660635127105" name="All files">
-    <metrics statements="395" coveredstatements="339" conditionals="78" coveredconditionals="46" methods="49" coveredmethods="42" elements="522" coveredelements="427" complexity="0" loc="395" ncloc="395" packages="7" files="23" classes="23"/>
+<coverage generated="1660641850102" clover="3.2.0">
+  <project timestamp="1660641850102" name="All files">
+    <metrics statements="395" coveredstatements="340" conditionals="78" coveredconditionals="46" methods="49" coveredmethods="42" elements="522" coveredelements="428" complexity="0" loc="395" ncloc="395" packages="7" files="23" classes="23"/>
     <package name="DinasQ-Team1-Server">
       <metrics statements="15" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="0"/>
       <file name="App.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\App.js">
@@ -24,18 +24,18 @@
       </file>
     </package>
     <package name="DinasQ-Team1-Server.controllers">
-      <metrics statements="168" coveredstatements="139" conditionals="42" coveredconditionals="25" methods="23" coveredmethods="20"/>
+      <metrics statements="168" coveredstatements="140" conditionals="42" coveredconditionals="25" methods="23" coveredmethods="20"/>
       <file name="OfficialLetterController.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\controllers\OfficialLetterController.js">
-        <metrics statements="35" coveredstatements="31" conditionals="8" coveredconditionals="5" methods="5" coveredmethods="5"/>
+        <metrics statements="35" coveredstatements="32" conditionals="8" coveredconditionals="5" methods="5" coveredmethods="5"/>
         <line num="1" count="3" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="9" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="2" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
@@ -221,7 +221,7 @@
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
-        <line num="4" count="14" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
         <line num="7" count="3" type="stmt"/>
         <line num="8" count="28" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
@@ -250,8 +250,8 @@
         <line num="6" count="6" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
@@ -266,8 +266,8 @@
         <line num="32" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
-        <line num="37" count="6" type="stmt"/>
-        <line num="38" count="6" type="stmt"/>
+        <line num="37" count="7" type="stmt"/>
+        <line num="38" count="7" type="stmt"/>
         <line num="42" count="3" type="stmt"/>
       </file>
       <file name="UpdateUserAuthorization.js" path="C:\Users\Caca\Desktop\Bootcamp\p3\DinasQ-Team1-Server\middlewares\UpdateUserAuthorization.js">
@@ -292,11 +292,11 @@
         <line num="5" count="28" type="stmt"/>
         <line num="6" count="28" type="stmt"/>
         <line num="7" count="28" type="stmt"/>
-        <line num="8" count="26" type="stmt"/>
-        <line num="11" count="26" type="cond" truecount="1" falsecount="1"/>
-        <line num="12" count="26" type="stmt"/>
-        <line num="19" count="26" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
+        <line num="8" count="27" type="stmt"/>
+        <line num="11" count="27" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="27" type="stmt"/>
+        <line num="19" count="27" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
         <line num="25" count="3" type="stmt"/>
       </file>
     </package>

@@ -33,6 +33,9 @@ const errorHandler = (err, req, res, next) => {
     case "NeedNewPass":
       res.status(400).json({ message: "Please insert new password" });
       break;
+    case "CheckInFirst":
+      res.status(400).json({ message: "Please check in first" });
+      break;
     default:
       res.status(500).json({ message: "Internal server error" });
       break;

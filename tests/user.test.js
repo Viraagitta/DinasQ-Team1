@@ -3,18 +3,6 @@ const app = require("../App");
 const { sequelize, User } = require("../models");
 const { signPayload } = require("../helpers/jwt");
 
-const generateToken = () => {
-  const jwtPayload = {
-    id: 1,
-    email: "heri@dinasq.com",
-    role: "Super Admin",
-  };
-
-  const access_token = signPayload(jwtPayload);
-
-  return access_token;
-};
-
 let dummyUser = null;
 let dummyAdmin = null;
 let adminToken = null;

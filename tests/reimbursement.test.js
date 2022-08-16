@@ -12,6 +12,7 @@ const { queryInterface } = sequelize;
 const pass = require("../helpers/bcrypt");
 const { signPayload } = require("../helpers/jwt");
 
+
 const generateToken = () => {
   const jwtPayload = {
     id: 1,
@@ -23,6 +24,11 @@ const generateToken = () => {
 
   return access_token;
 };
+
+let dummyUser = null;
+let dummyAdmin = null;
+let adminToken = null;
+let userToken = null;
 
 beforeAll((done) => {
   let userData = {
@@ -37,7 +43,14 @@ beforeAll((done) => {
   };
 
   User.create(userData)
-    .then(() => {
+    .then((user) => {
+      dummyAdmin = user.dataValues;
+      adminToken = signPayload({
+        id: dummyAdmin.id,
+        email: dummyAdmin.email,
+        role: dummyAdmin.role,
+      });
+
       let data = [
         {
           UserId: "1",
@@ -104,6 +117,10 @@ beforeAll((done) => {
     });
 });
 
+beforeEach(() => {
+  jest.restoreAllMocks();
+});
+
 afterAll((done) => {
   OfficialLetter.destroy({
     truncate: true,
@@ -130,11 +147,10 @@ afterAll((done) => {
 describe("GET /reimbursements/:id", () => {
   describe("GET /reimbursements/:id - Get one Reimbursements by Reimbursement ID - Success Test", () => {
     it("Should return a status of 200 and a reimbursement", async () => {
-      const access_token = generateToken();
 
       const res = await request(app)
         .get("/reimbursements/2")
-        .set({ access_token });
+        .set({ access_token: adminToken });
 
       expect(res.status).toBe(200);
       expect(res.body).toHaveProperty("id", 2);
@@ -143,15 +159,16 @@ describe("GET /reimbursements/:id", () => {
 
   describe("GET /reimbursements/:id - Get one Reimbursements by Reimbursement ID - Fail Test", () => {
     it("Should return a status of 500", async () => {
-      const access_token = generateToken();
-
+      jest.spyOn(Reimbursement, "findByPk").mockRejectedValue("Error");
       const res = await request(app)
-        .get("/reimbursements/200")
-        .set({ access_token });
+        .get("/reimbursements/2")
+        .set({ access_token : adminToken });
 
-      expect(res.status).toBe(500);
+        expect(res.status).toBe(500);
+        expect(res.body).toHaveProperty("message", "Internal server error");
     });
   });
+  
 });
 
 //CREATE NEW REIMBURSEMENT
@@ -170,12 +187,10 @@ describe("POST /reimbursements - Create New Reimbursement - Success Test", () =>
       updatedAt: new Date(),
     };
 
-    const access_token = generateToken();
-
     const res = await request(app)
       .post("/reimbursements")
       .send(data)
-      .set({ access_token });
+      .set({ access_token : adminToken });
 
     expect(res.status).toBe(201);
     expect(res.body).toHaveProperty('message', 'Successfully requesting a new reimbursement')
@@ -184,49 +199,55 @@ describe("POST /reimbursements - Create New Reimbursement - Success Test", () =>
 
 //UPDATE REIMBURSEMENT STATUS
 describe("PATCH /reimbursements/:id - Update Reimbursement Status - Success Test", () => {
-    it("Should return a status of 201", async () => {
-      let data = {
-        status: "OK",
-      };
-  
-      const access_token = generateToken();
-  
-      const res = await request(app)
-        .patch("/reimbursements/1")
-        .send(data)
-        .set({ access_token });
-  
-      expect(res.status).toBe(201);
-      expect(res.body).toHaveProperty('message', 'Reimbursement status id 1 has been updated to OK')
-    });
+  it("Should return a status of 201", async () => {
+    let data = {
+      status: "OK",
+    };
+
+    const res = await request(app)
+      .patch("/reimbursements/1")
+      .send(data)
+      .set({ access_token: adminToken });
+
+    expect(res.status).toBe(201);
+    expect(res.body).toHaveProperty('message', 'Reimbursement status id 1 has been updated to OK')
   });
+});
 
 //GET REIMBURSEMENT PDF
 describe("GET reimbursements/pdf/:id - Get Reimbursement PDF - Success Test", () => {
-    it("Should return a status of 200", async () => {
-  
-      const access_token = generateToken();
-  
-      const res = await request(app)
-        .get("/reimbursements/pdf/1")
-        .set({ access_token });
-  
-      expect(res.status).toBe(200);
-    });
+  it("Should return a status of 200", async () => {
+
+    const res = await request(app)
+      .get("/reimbursements/pdf/1")
+      .set({ access_token: adminToken });
+
+    expect(res.status).toBe(200);
   });
+});
 
 //GET ALL REIMBURSEMENTS
 describe("GET /reimbursements", () => {
   describe("GET /reimbursements - Get All Reimbursements - Success Test", () => {
     it("Should return all reimbursements without pagination", async () => {
-      const access_token = generateToken();
-
       const res = await request(app)
         .get("/reimbursements")
-        .set({ access_token });
+        .set({ access_token: adminToken });
 
       expect(res.status).toBe(200);
       expect(res.body).toHaveProperty("totalPages", null);
+    });
+  });
+
+  describe("GET /reimbursements - Get All Reimbursements - Fail Test", () => {
+    it("Should return a status of 500 and an ISE message", async () => {
+      jest.spyOn(Reimbursement, "findAll").mockRejectedValue("Error");
+      const res = await request(app)
+        .get("/reimbursements")
+        .set({ access_token: adminToken });
+
+        expect(res.status).toBe(500);
+        expect(res.body).toHaveProperty("message", "Internal server error");
     });
   });
 });

@@ -14,6 +14,7 @@ class UserLocationController {
       });
       res.status(201).json({ message: `Successfully checked in at ${city}` });
     } catch (err) {
+      console.log(err);
       next(err);
     }
   }

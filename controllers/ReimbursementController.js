@@ -1,4 +1,5 @@
-const { Reimbursement } = require("../models");
+const { Reimbursement, OfficialLetter, User } = require("../models");
+const { generatePdf } = require("../services/toPdf")
 
 class ReimbursementController {
   static async getReimbursements(req, res, next) {
@@ -66,6 +67,27 @@ class ReimbursementController {
       });
     } catch (err) {
       next(err);
+    }
+  }
+
+  static async getPdf(req, res, next){
+    try {
+      const { id } = req.params;
+      const reimbursement = await Reimbursement.findOne({
+        where: {id},
+        include: [{
+          model: OfficialLetter,
+          include: {
+            model: User,
+            attributes: ['firstName', 'lastName', 'position']}}]
+      });
+      if (!reimbursement) return next({ name: "ReimbursementNotFound" });
+
+      generatePdf(reimbursement.dataValues)
+      
+      res.download('services/report.pdf')
+    } catch (error) {
+      next(error);
     }
   }
 }

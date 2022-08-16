@@ -1,6 +1,6 @@
 const request = require('supertest');
 const app = require('../App');
-const { sequelize, Location, OfficialLetter, Reimbursement, User, UserLocation } = require('../models');
+const { sequelize, OfficialLetter, User } = require('../models');
 const { queryInterface } = sequelize
 const pass = require('../helpers/bcrypt')
 const { signPayload } = require("../helpers/jwt");
@@ -91,8 +91,6 @@ describe("GET /officialletters/:id", () => {
         it('Should return a status of 200 and an official letter', async () => {
             const access_token = generateToken()
 
-            console.log(access_token, '<<<<<<<<<<<<<<<<<<<<<<<<<<<<S')
-
             const res = await request(app).get('/officialletters/1').set({ access_token })
 
             expect(res.status).toBe(200)
@@ -110,6 +108,33 @@ describe("GET /officialletters/:id", () => {
 
         })
     })
+});
+
+
+//GET LOGGED IN USER'S OFFICIAL LETTERS
+describe("GET /logged-in-letter", () => {
+    describe('GET /logged-in-letter - Get Logged In User Official Letters - Success Test', () => {
+        it('Should return a status of 200 and official letters', async () => {
+            const access_token = generateToken()
+
+            const res = await request(app).get('/logged-in-letter').set({ access_token })
+
+            expect(res.status).toBe(200)
+            
+        })
+    })
+
+    describe('GET /logged-in-letter - Get Logged In User Official Letters - Fail Test', () => {
+        it('Should return a 400 message', async () => {
+            const access_token = generateToken()
+
+            const res = await request(app).post('/logged-in-letter')
+
+            expect(res.status).toBe(400)
+
+        })
+    })
+    
 });
 
 //CREATE OFFICIAL LETTER
@@ -157,6 +182,7 @@ describe("POST /officialletters", () => {
         })
     })
 });
+
 
 //UPDATE STATUS
 describe("PATCH /officialletters/:id", () => {

@@ -79,6 +79,7 @@ class ReimbursementController {
         },
         { where: { id } }
       );
+      res.io.emit("update-status-reimbursement", true);
       let mailTransporter = nodemailer.createTransport({
         service: "gmail",
         auth: {

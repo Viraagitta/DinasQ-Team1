@@ -28,6 +28,10 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(PORT, () =>
-  console.log(`Successfully connected to port ${PORT}`)
-);
+
+if(process.env.NODE_ENV !== 'test'){
+app.listen(PORT, () => console.log(`Successfully connected to port ${PORT}`));
+}
+
+module.exports = app
+

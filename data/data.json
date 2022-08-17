@@ -189,6 +189,106 @@
       "phoneNumber": "08912368618",
       "address": "jl. ninja uchiha",
       "position": "Marketing"
+    },
+    {
+      "firstName": "Thomas",
+      "lastName": "Train",
+      "role": "Staff",
+      "email": "testing20@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08912368618",
+      "address": "jl. Rel",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Niki",
+      "lastName": "Zefanya",
+      "role": "Staff",
+      "email": "testing21@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08912368618",
+      "address": "jl. Kembang",
+      "position": "Engineering"
+    },
+    {
+      "firstName": "Claire",
+      "lastName": "Rosinkranz",
+      "role": "Staff",
+      "email": "testing22@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08912368618",
+      "address": "jl. Seni",
+      "position": "Engineering"
+    },
+    {
+      "firstName": "Hannah",
+      "lastName": "Montana",
+      "role": "Staff",
+      "email": "testing23@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08912368618",
+      "address": "jl. Seni",
+      "position": "Finance"
+    },
+    {
+      "firstName": "Stephen",
+      "lastName": "Sanchez",
+      "role": "Staff",
+      "email": "testing24@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08912368618",
+      "address": "jl. Georgia",
+      "position": "Finance"
+    },
+    {
+      "firstName": "Sukuna",
+      "lastName": "Ryoumen",
+      "role": "Staff",
+      "email": "testing25@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08912368618",
+      "address": "jl. tokyo",
+      "position": "Engineering"
+    },
+    {
+      "firstName": "Gojo",
+      "lastName": "Satoru",
+      "role": "Staff",
+      "email": "testing26@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08912368618",
+      "address": "jl. tokyo",
+      "position": "Engineering"
+    },
+    {
+      "firstName": "Nanami",
+      "lastName": "Kento",
+      "role": "Staff",
+      "email": "testing27@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08912368618",
+      "address": "jl. tokyo",
+      "position": "Finance"
+    },
+    {
+      "firstName": "Abe",
+      "lastName": "Cia",
+      "role": "Staff",
+      "email": "testing29@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08912368618",
+      "address": "jl. tiktok",
+      "position": "Marketing"
+    },
+    {
+      "firstName": "Yamaha",
+      "lastName": "Didepan",
+      "role": "Staff",
+      "email": "testing30@gmail.com",
+      "password": "12345",
+      "phoneNumber": "08912368618",
+      "address": "jl. road",
+      "position": "Marketing"
     }
   ],
   "officialLetters": [
@@ -311,6 +411,156 @@
       "returnDate": "28/08/2022",
       "status": "pending",
       "updatedBy": "-"
+    },
+    {
+      "UserId": "3",
+      "activityName": "Rapat dengan divisi engineering",
+      "from": "Jakarta",
+      "to": "Solo",
+      "leaveDate": "29/08/2022",
+      "returnDate": "01/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "3",
+      "activityName": "Menghadiri undangan pemerintahan daerah",
+      "from": "Solo",
+      "to": "Jayapura",
+      "leaveDate": "02/09/2022",
+      "returnDate": "03/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "25",
+      "activityName": "Meeting dengan kepala cabang",
+      "from": "Jakarta",
+      "to": "Bandung",
+      "leaveDate": "02/09/2022",
+      "returnDate": "03/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "26",
+      "activityName": "Menghadiri pameran tahunan",
+      "from": "Jakarta",
+      "to": "Medan",
+      "leaveDate": "02/09/2022",
+      "returnDate": "03/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "26",
+      "activityName": "Menghadiri undangan pemerintahan daerah",
+      "from": "Jakarta",
+      "to": "Denpasar",
+      "leaveDate": "12/09/2022",
+      "returnDate": "13/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "15",
+      "activityName": "Menghadiri undangan pemerintahan daerah",
+      "from": "Jakarta",
+      "to": "Denpasar",
+      "leaveDate": "12/09/2022",
+      "returnDate": "13/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "12",
+      "activityName": "Meeting dengan divisi lingkungan",
+      "from": "Jakarta",
+      "to": "Yogyakarta",
+      "leaveDate": "22/09/2022",
+      "returnDate": "23/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "23",
+      "activityName": "Menghadiri undangan client",
+      "from": "Jakarta",
+      "to": "Surabaya",
+      "leaveDate": "10/09/2022",
+      "returnDate": "11/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "17",
+      "activityName": "Peresmian proyek",
+      "from": "Jakarta",
+      "to": "Surabaya",
+      "leaveDate": "08/09/2022",
+      "returnDate": "12/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "17",
+      "activityName": "Peresmian proyek",
+      "from": "Jakarta",
+      "to": "Medan",
+      "leaveDate": "13/09/2022",
+      "returnDate": "15/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "7",
+      "activityName": "Pembukaan kantor cabang",
+      "from": "Jakarta",
+      "to": "Denpasar",
+      "leaveDate": "12/09/2022",
+      "returnDate": "13/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "8",
+      "activityName": "Pembukaan kantor cabang",
+      "from": "Jakarta",
+      "to": "Denpasar",
+      "leaveDate": "12/09/2022",
+      "returnDate": "13/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "14",
+      "activityName": "Menghadiri undangan pemerintahan daerah",
+      "from": "Solo",
+      "to": "Jayapura",
+      "leaveDate": "02/09/2022",
+      "returnDate": "03/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "19",
+      "activityName": "Menghadiri undangan peresmian client",
+      "from": "Jakarta",
+      "to": "Bojonegoro",
+      "leaveDate": "02/09/2022",
+      "returnDate": "03/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "UserId": "21",
+      "activityName": "Meeting dengan client",
+      "from": "Solo",
+      "to": "Jayapura",
+      "leaveDate": "02/09/2022",
+      "returnDate": "03/09/2022",
+      "status": "pending",
+      "updatedBy": "-"
     }
   ],
   "reimbursements": [
@@ -401,6 +651,123 @@
       "cost": 1052700,
       "image": "https://media-cdn.tripadvisor.com/media/daodao/photo-s/12/6a/ef/22/photo3jpg.jpg",
       "category": "Entertaint",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "13",
+      "description": "Transportasi menuju hotel",
+      "cost": 90150,
+      "image": "https://s.kaskus.id/r540x540/images/2016/05/23/7361148_20160523021301.jpg",
+      "category": "Transport",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "23",
+      "description": "Transportasi menuju bandara",
+      "cost": 90150,
+      "image": "https://s.kaskus.id/r540x540/images/2016/05/23/7361148_20160523021301.jpg",
+      "category": "Transport",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "16",
+      "description": "Makan siang dengan client",
+      "cost": 142000,
+      "image": "https://cdn1-production-images-kly.akamaized.net/ApAEevskq66qR-mXMOGe-jp7yp4=/640x853/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3470509/original/051746300_1622604393-WhatsApp_Image_2021-06-02_at_10.03.32__1_.jpeg",
+      "category": "Entertaint",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "19",
+      "description": "Makan siang dengan tim",
+      "cost": 142000,
+      "image": "https://cdn1-production-images-kly.akamaized.net/ApAEevskq66qR-mXMOGe-jp7yp4=/640x853/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3470509/original/051746300_1622604393-WhatsApp_Image_2021-06-02_at_10.03.32__1_.jpeg",
+      "category": "Entertaint",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "2",
+      "description": "Transportasi menuju bandara",
+      "cost": 90150,
+      "image": "https://s.kaskus.id/r540x540/images/2016/05/23/7361148_20160523021301.jpg",
+      "category": "Transport",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "10",
+      "description": "Penginapan",
+      "cost": 2000000,
+      "image": "https://imgv2-1-f.scribdassets.com/img/document/246795839/original/5404c5349c/1658304154?v=1",
+      "category": "Accomodation",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "29",
+      "description": "Penginapan",
+      "cost": 254000,
+      "image": "https://imgv2-1-f.scribdassets.com/img/document/487605761/original/0d9444ff5f/1656293034?v=1",
+      "category": "Accomodation",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "23",
+      "description": "Penginapan",
+      "cost": 2000000,
+      "image": "https://imgv2-1-f.scribdassets.com/img/document/246795839/original/5404c5349c/1658304154?v=1",
+      "category": "Accomodation",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "4",
+      "description": "Penginapan",
+      "cost": 254000,
+      "image": "https://imgv2-1-f.scribdassets.com/img/document/487605761/original/0d9444ff5f/1656293034?v=1",
+      "category": "Accomodation",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "126",
+      "description": "Makan siang dengan client proyek",
+      "cost": 330000,
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/11/7d/b7/58/bon-makan-di-paul.jpg",
+      "category": "Entertaint",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "21",
+      "description": "Makan siang dengan client proyek",
+      "cost": 330000,
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/11/7d/b7/58/bon-makan-di-paul.jpg",
+      "category": "Entertaint",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "11",
+      "description": "Penginapan",
+      "cost": 254000,
+      "image": "https://imgv2-1-f.scribdassets.com/img/document/487605761/original/0d9444ff5f/1656293034?v=1",
+      "category": "Accomodation",
+      "status": "pending",
+      "updatedBy": "-"
+    },
+    {
+      "OfficialLetterId": "14",
+      "description": "Makan siang dengan client",
+      "cost": 330000,
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/11/7d/b7/58/bon-makan-di-paul.jpg",
+      "category": "Transport",
       "status": "pending",
       "updatedBy": "-"
     }

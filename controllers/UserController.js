@@ -227,37 +227,38 @@ class UserController {
   }
 
   static async deleteUser(req, res, next) {
-    const t = await sequelize.transaction();
+    // const t = await sequelize.transaction();
     try {
       const { id } = req.params;
       const findUser = await User.findByPk(id);
       if (!findUser) return next({ name: "UserNotFound" });
 
-      const findLetter = await OfficialLetter.findOne({
-        where: { UserId: id },
-      });
+      // const findLetter = await OfficialLetter.findOne({
+      //   where: { UserId: id },
+      // });
 
       const deleteUser = await User.destroy({
         where: { id },
-        transaction: t,
+        // transaction: t,
       });
 
-      const deletedLetter = await OfficialLetter.destroy({
-        where: { UserId: id },
-        transaction: t,
-      });
+      // const deletedLetter = await OfficialLetter.destroy({
+      //   where: { UserId: id },
+      //   transaction: t,
+      // });
 
-      const deletedReimbursement = await Reimbursement.destroy({
-        where: { OfficialLetterId: findLetter.id },
-        transaction: t,
-      });
+      // const deletedReimbursement = await Reimbursement.destroy({
+      //   where: { OfficialLetterId: findLetter.id },
+      //   transaction: t,
+      // });
 
-      await t.commit();
+      // await t.commit();
       res
         .status(200)
         .json({ message: `Successfully deleting user ${findUser.id}` });
     } catch (err) {
-      await t.rollback();
+      console.log(err, '<<<<<<<<<<<<err delete')
+      // await t.rollback();
       next(err);
     }
   }

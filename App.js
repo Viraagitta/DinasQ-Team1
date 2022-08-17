@@ -28,14 +28,10 @@ io.on("connection", (socket) => {
   });
 });
 
-<<<<<<< HEAD
+
 if(process.env.NODE_ENV !== 'test'){
 app.listen(PORT, () => console.log(`Successfully connected to port ${PORT}`));
 }
 
 module.exports = app
-=======
-server.listen(PORT, () =>
-  console.log(`Successfully connected to port ${PORT}`)
-);
->>>>>>> 814d54dcde385435293e61e7f484670e9cfefbd9
+

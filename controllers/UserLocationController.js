@@ -44,6 +44,7 @@ class UserLocationController {
             ],
           },
         ],
+        order: [["id", "DESC"]],
       });
       res.status(200).json(history);
     } catch (err) {

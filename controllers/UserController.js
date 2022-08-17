@@ -72,18 +72,31 @@ class UserController {
 
   static async getUsers(req, res, next) {
     try {
-      const response = await User.findAll({
+      const { page: xpage, size } = req.query;
+      const page = xpage - 1;
+      const limit = size ? +size : 9;
+      const offset = page ? +page * limit : 0;
+      const response = await User.findAndCountAll({
+        limit,
+        offset,
         attributes: [
           "id",
           "firstName",
           "lastName",
+          "role",
           "email",
           "phoneNumber",
           "address",
           "position",
         ],
+        order: [['id', 'ASC']]
       });
-      res.status(200).json(response);
+      res.status(200).json({
+        totalUsers: response.count,
+        totalPages: Math.ceil(response.count / size),
+        currentPage: +xpage,
+        response,
+      });
     } catch (err) {
       next(err);
     }
@@ -96,6 +109,7 @@ class UserController {
           "id",
           "firstName",
           "lastName",
+          "role",
           "email",
           "phoneNumber",
           "address",
@@ -126,6 +140,7 @@ class UserController {
           "id",
           "firstName",
           "lastName",
+          "role",
           "email",
           "phoneNumber",
           "address",
@@ -157,6 +172,7 @@ class UserController {
           "id",
           "firstName",
           "lastName",
+          "role",
           "email",
           "phoneNumber",
           "address",
@@ -187,7 +203,6 @@ class UserController {
         lastName,
         role,
         email,
-        password,
         phoneNumber,
         address,
         position,

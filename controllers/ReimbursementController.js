@@ -1,5 +1,6 @@
 const { Reimbursement, OfficialLetter, User } = require("../models");
 const { generatePdf } = require("../services/toPdf");
+const nodemailer = require("nodemailer");
 
 class ReimbursementController {
   static async getReimbursements(req, res, next) {
@@ -52,7 +53,8 @@ class ReimbursementController {
   static async updateStatusReimbursement(req, res, next) {
     try {
       const { id } = req.params;
-      const { status } = req.body;
+      const { status, email } = req.body;
+      console.log(email, "<<");
       const updatedBy = req.user.firstName + " " + req.user.lastName;
       const reimburse = await Reimbursement.findByPk(id);
       if (!reimburse) return next({ name: "ReimbursementNotFound" });
@@ -64,6 +66,28 @@ class ReimbursementController {
         },
         { where: { id } }
       );
+      let mailTransporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+          user: "dinasq05@gmail.com",
+          pass: "zncqxfdyjcalonps",
+        },
+      });
+
+      let mailDetails = {
+        from: "dinasq05@gmail.com",
+        to: email,
+        subject: "Status Reimburse",
+        text: `Hello employees reimburse has ${status}`,
+      };
+
+      mailTransporter.sendMail(mailDetails, function (err, data) {
+        if (err) {
+          console.log("Error Occurs");
+        } else {
+          console.log("Email sent successfully");
+        }
+      });
       res.status(201).json({
         message: `Reimbursement status id ${id} has been updated to ${status}`,
       });

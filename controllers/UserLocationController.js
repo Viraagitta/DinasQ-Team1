@@ -17,6 +17,7 @@ class UserLocationController {
         .status(201)
         .json({ message: `Successfully checked in at ${cityName}` });
     } catch (err) {
+      console.log(err);
       next(err);
     }
   }

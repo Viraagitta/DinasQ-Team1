@@ -130,6 +130,7 @@ class UserController {
           "phoneNumber",
           "address",
           "position",
+          "createdAt",
         ],
         include: [
           {

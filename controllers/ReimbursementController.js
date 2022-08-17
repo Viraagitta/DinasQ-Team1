@@ -55,7 +55,7 @@ class ReimbursementController {
     try {
       const { id } = req.params;
       const { status, email } = req.body;
-      console.log(email, "<<");
+      console.log(email, "<<<<<<<");
       const updatedBy = req.user.firstName + " " + req.user.lastName;
       const reimburse = await Reimbursement.findByPk(id);
       if (!reimburse) return next({ name: "ReimbursementNotFound" });
@@ -79,7 +79,11 @@ class ReimbursementController {
         from: "dinasq05@gmail.com",
         to: email,
         subject: "Status Reimburse",
-        text: `Hello employees reimburse has ${status}`,
+        html: `<html><body><p>Hello ${email}, your reimbursement ${JSON.stringify(
+          reimburse.description
+        )} with amount of Rp ${reimburse.cost.toLocaleString(
+          "id-ID"
+        )} has been <b>${status.toUpperCase()}</b>.</p></body></html>`,
       };
 
       mailTransporter.sendMail(mailDetails, function (err, data) {

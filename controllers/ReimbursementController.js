@@ -1,6 +1,7 @@
 const { Reimbursement, OfficialLetter, User } = require("../models");
 const { generatePdf } = require("../services/toPdf");
 const nodemailer = require("nodemailer");
+
 class ReimbursementController {
   static async getReimbursements(req, res, next) {
     try {
@@ -11,6 +12,7 @@ class ReimbursementController {
       const response = await Reimbursement.findAndCountAll({
         limit,
         offset,
+        order: [["id", "DESC"]],
       });
       res.status(200).json({
         totalReimbursements: response.count,
@@ -60,6 +62,7 @@ class ReimbursementController {
         {
           status,
           updatedBy,
+          updatedAt: new Date(),
         },
         { where: { id } }
       );

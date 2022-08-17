@@ -4,15 +4,18 @@ class UserLocationController {
   static async checkInUser(req, res, next) {
     try {
       const { id } = req.user;
-      const geocode = await getGeocode();
-      const city = await getCityName(geocode);
+      const { longitude, latitude, cityName } = req.body;
+      if (!longitude || !latitude || !cityName)
+        return next({ name: "CheckInFirst" });
       const checkIn = await UserLocation.create({
         UserId: id,
-        latitude: geocode.lat,
-        longitude: geocode.lng,
-        cityName: city,
+        latitude,
+        longitude,
+        cityName,
       });
-      res.status(201).json({ message: `Successfully checked in at ${city}` });
+      res
+        .status(201)
+        .json({ message: `Successfully checked in at ${cityName}` });
     } catch (err) {
       console.log(err);
       next(err);

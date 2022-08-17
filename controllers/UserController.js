@@ -149,6 +149,37 @@ class UserController {
     }
   }
 
+  static async loggedInUserDetail(req, res, next) {
+    try {
+      const { id } = req.user;
+      const findUser = await User.findByPk(id, {
+        attributes: [
+          "id",
+          "firstName",
+          "lastName",
+          "email",
+          "phoneNumber",
+          "address",
+          "position",
+        ],
+        include: [
+          {
+            model: OfficialLetter,
+            include: [
+              {
+                model: Reimbursement,
+              },
+            ],
+          },
+        ],
+      });
+      if (!findUser) return next({ name: "UserNotFound" });
+      res.status(200).json(findUser);
+    } catch (err) {
+      next(err);
+    }
+  }
+
   static async updateUser(req, res, next) {
     try {
       const {
@@ -222,7 +253,7 @@ class UserController {
       let { password } = req.body;
       if (!password) return next({ name: "NeedNewPass" });
       // password = hashPassword(password, 10);
-      console.log(password)
+      console.log(password);
       const findUser = await User.findByPk(id);
       if (!findUser) return next({ name: "UserNotFound" });
       const updatePass = await User.update(

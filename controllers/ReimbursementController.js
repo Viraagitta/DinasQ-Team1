@@ -42,6 +42,7 @@ class ReimbursementController {
       const newReimburse = await Reimbursement.create({
         ...req.body,
       });
+      res.io.emit("update-list-reimbursement", true);
       res
         .status(201)
         .json({ message: "Successfully requesting a new reimbursement" });

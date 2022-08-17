@@ -75,6 +75,7 @@ class OfficialLetterController {
         leaveDate,
         returnDate,
       });
+      res.io.emit("update-list-letter", true);
       res.status(201).json({ message: "Successfully requesting new activity" });
     } catch (err) {
       next(err);

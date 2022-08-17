@@ -36,6 +36,18 @@ class ReimbursementController {
     }
   }
 
+  static async getReimbursementFromLetter(req, res, next) {
+    try {
+      const { OfficialLetterId } = req.params;
+      const response = await Reimbursement.findAll({
+        where: { OfficialLetterId },
+      });
+      res.status(200).json(response);
+    } catch (err) {
+      next(err);
+    }
+  }
+
   static async createReimbursement(req, res, next) {
     try {
       const { OfficialLetterId, description, cost, image } = req.body;

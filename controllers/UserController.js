@@ -88,6 +88,7 @@ class UserController {
           "phoneNumber",
           "address",
           "position",
+          "createdAt"
         ],
         order: [['id', 'ASC']]
       });
@@ -114,6 +115,7 @@ class UserController {
           "phoneNumber",
           "address",
           "position",
+          "createdAt"
         ],
         include: [
           {

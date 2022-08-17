@@ -1,5 +1,5 @@
 const { UserLocation, User, sequelize } = require("../models");
-const { getGeocode, getCityName } = require("../services/location");
+
 class UserLocationController {
   static async checkInUser(req, res, next) {
     try {
@@ -54,23 +54,13 @@ class UserLocationController {
 
   static async lastLocationAllUser(req, res, next) {
     try {
-      const locations = await User.findAll({
-        attributes: [
-          "id",
-          "firstName",
-          "lastName",
-          "email",
-          "phoneNumber",
-          "address",
-          "position",
-        ],
-        include: [
-          {
-            model: UserLocation,
-          },
-        ],
-        order: [[UserLocation, "updatedAt", "DESC"]],
-      });
+      const locations = await UserLocation.findAll({
+        limit: 10,
+        include: [{
+          model: User
+        }],
+        order: [['createdAt', 'DESC']]
+      })
       res.status(200).json(locations);
     } catch (err) {
       next(err);

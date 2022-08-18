@@ -13,6 +13,7 @@ class UserLocationController {
         longitude,
         cityName,
       });
+      res.io.emit("update-list-location", true);
       res
         .status(201)
         .json({ message: `Successfully checked in at ${cityName}` });
@@ -56,11 +57,13 @@ class UserLocationController {
     try {
       const locations = await UserLocation.findAll({
         limit: 10,
-        include: [{
-          model: User
-        }],
-        order: [['createdAt', 'DESC']]
-      })
+        include: [
+          {
+            model: User,
+          },
+        ],
+        order: [["createdAt", "DESC"]],
+      });
       res.status(200).json(locations);
     } catch (err) {
       next(err);

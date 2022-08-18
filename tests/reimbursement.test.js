@@ -12,23 +12,12 @@ const { queryInterface } = sequelize;
 const pass = require("../helpers/bcrypt");
 const { signPayload } = require("../helpers/jwt");
 
-
-const generateToken = () => {
-  const jwtPayload = {
-    id: 1,
-    email: "heri@dinasq.com",
-    role: "Super Admin",
-  };
-
-  const access_token = signPayload(jwtPayload);
-
-  return access_token;
-};
-
 let dummyUser = null;
 let dummyAdmin = null;
 let adminToken = null;
 let userToken = null;
+
+let dummyOfficialLetter = null
 
 beforeAll((done) => {
   let userData = {
@@ -51,7 +40,7 @@ beforeAll((done) => {
         role: dummyAdmin.role,
       });
 
-      let data = [
+      let data = 
         {
           UserId: "1",
           activityName: "Mengunjungi client project kalimantan",
@@ -63,24 +52,14 @@ beforeAll((done) => {
           updatedBy: "Windah Basudara",
           createdAt: new Date(),
           updatedAt: new Date(),
-        },
-        {
-          UserId: "1",
-          activityName: "Menghadiri undangan dari lembaga industri",
-          from: "Jakarta",
-          to: "Surabaya",
-          leaveDate: "20/08/2022",
-          returnDate: "24/08/2022",
-          status: "pending",
-          updatedBy: "Windah Basudara",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-      ];
+        }
+      ;
 
-      return queryInterface.bulkInsert("OfficialLetters", data);
+      return OfficialLetter.create(data);
     })
-    .then(() => {
+    .then((officialLetter) => {
+      dummyOfficialLetter = officialLetter.dataValues;
+
       let data = [
         {
           OfficialLetterId: "1",
@@ -171,6 +150,45 @@ describe("GET /reimbursements/:id", () => {
   
 });
 
+describe("GET /reimbursements/:id", () => {
+  describe("GET /reimbursements/:id - Get one Reimbursements by Reimbursement ID - Success Test", () => {
+    it("Should return a status of 200 and a reimbursement", async () => {
+
+      const res = await request(app)
+        .get("/reimbursements/2")
+        .set({ access_token: adminToken });
+
+      expect(res.status).toBe(200);
+      expect(res.body).toHaveProperty("id", 2);
+    });
+  });
+  
+});
+
+//GET REIMBURSEMENT FROM LETTER 
+describe("GET /reimburse-letter/:OfficialLetterId - Get Reimbursements by Official Letter ID - Success Test", () => {
+  it("Should return a status of 200", async () => {
+    const res = await request(app)
+      .get("/reimburse-letter/" + dummyOfficialLetter.id)
+      .set({ access_token : adminToken });
+
+      expect(res.status).toBe(200);
+      expect(res.body[0]).toHaveProperty('OfficialLetterId', dummyOfficialLetter.id)
+  });
+
+  describe("GET /reimburse-letter/:OfficialLetterId - Get Reimbursements by Official Letter ID - Fail Test", () => {
+    it("Should return a status of 500", async () => {
+      jest.spyOn(Reimbursement, "findAll").mockRejectedValue("Error");
+      const res = await request(app)
+        .get("/reimburse-letter/"+dummyOfficialLetter.id)
+        .set({ access_token : adminToken });
+
+        expect(res.status).toBe(500);
+        expect(res.body).toHaveProperty("message", "Internal server error");
+    });
+  });
+});
+
 //CREATE NEW REIMBURSEMENT
 describe("POST /reimbursements - Create New Reimbursement - Success Test", () => {
   it("Should return a status of 201", async () => {
@@ -194,6 +212,32 @@ describe("POST /reimbursements - Create New Reimbursement - Success Test", () =>
 
     expect(res.status).toBe(201);
     expect(res.body).toHaveProperty('message', 'Successfully requesting a new reimbursement')
+  });
+
+  describe("POST /reimbursements - Create New Reimbursement - Fail Test", () => {
+    it("Should return a status of 500", async () => {
+      jest.spyOn(Reimbursement, "create").mockRejectedValue("Error");
+      let data = {
+        OfficialLetterId: "1",
+        description: "New Reimbursement",
+        cost: 250000,
+        image:
+          "https://nugrohofebianto.com/wp-content/uploads/2022/01/Hotel-Merpati-Kota-Pontianak-1024x768.jpg",
+        category: "Transportation",
+        status: "pending",
+        updatedBy: "-",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+      
+      const res = await request(app)
+        .post("/reimbursements")
+        .send(data)
+        .set({ access_token : adminToken });
+
+        expect(res.status).toBe(500);
+        expect(res.body).toHaveProperty("message", "Internal server error");
+    });
   });
 });
 

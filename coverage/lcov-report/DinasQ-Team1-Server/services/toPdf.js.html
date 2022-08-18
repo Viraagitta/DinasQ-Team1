@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">10.71% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/28</span>
+                <span class='fraction'>28/28</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">10.71% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/28</span>
+                <span class='fraction'>28/28</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -98,74 +98,74 @@
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
 <a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const { jsPDF } = require("jspdf");
+<span class="cline-any cline-yes">4x</span></td><td class="text"><pre class="prettyprint lang-js">const { jsPDF } = require("jspdf");
 &nbsp;
-const generatePdf = <span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {
-    const doc = <span class="cstat-no" title="statement not covered" >new jsPDF();</span>
-<span class="cstat-no" title="statement not covered" >    doc.text("Reimbursement Report", 75, 10);</span>
-<span class="cstat-no" title="statement not covered" >    doc.line(10, 19, 200, 19); </span>
-<span class="cstat-no" title="statement not covered" >    doc.line(10, 20, 200, 20); </span>
+const generatePdf = (data) =&gt; {
+    const doc = new jsPDF();
+    doc.text("Reimbursement Report", 75, 10);
+    doc.line(10, 19, 200, 19); 
+    doc.line(10, 20, 200, 20); 
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    doc.setFontSize(12);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text("Employee Name ", 20, 30);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text( ": "+data.OfficialLetter.User.firstName+ " " + data.OfficialLetter.User.lastName, 60, 30)</span>
-<span class="cstat-no" title="statement not covered" >    doc.text("Activity ", 20, 40);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text(": " + data.OfficialLetter.activityName , 60, 40);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text("Category ", 20, 50);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text(": " + data.category , 60, 50);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text("From ", 20, 60);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text(": " + data.OfficialLetter.from , 60, 60);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text("To ", 20, 70);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text(": " + data.OfficialLetter.to, 60, 70);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text("Leave Date " , 20, 80);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text(": "  +data.OfficialLetter.leaveDate , 60, 80);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text("Return Date ", 20, 90);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text(": " +data.OfficialLetter.returnDate , 60, 90);</span>
+    doc.setFontSize(12);
+    doc.text("Employee Name ", 20, 30);
+    doc.text( ": "+data.OfficialLetter.User.firstName+ " " + data.OfficialLetter.User.lastName, 60, 30)
+    doc.text("Activity ", 20, 40);
+    doc.text(": " + data.OfficialLetter.activityName , 60, 40);
+    doc.text("Category ", 20, 50);
+    doc.text(": " + data.category , 60, 50);
+    doc.text("From ", 20, 60);
+    doc.text(": " + data.OfficialLetter.from , 60, 60);
+    doc.text("To ", 20, 70);
+    doc.text(": " + data.OfficialLetter.to, 60, 70);
+    doc.text("Leave Date " , 20, 80);
+    doc.text(": "  +data.OfficialLetter.leaveDate , 60, 80);
+    doc.text("Return Date ", 20, 90);
+    doc.text(": " +data.OfficialLetter.returnDate , 60, 90);
     
-<span class="cstat-no" title="statement not covered" >    doc.line(10, 100, 200, 100);</span>
+    doc.line(10, 100, 200, 100);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    doc.text("Cost ", 20, 110);</span>
-<span class="cstat-no" title="statement not covered" >    doc.text(": Rp. " + (data.cost.toLocaleString()) +",-" + "  (" + data.status.toUpperCase() +")"  , 60, 110);</span>
+    doc.text("Cost ", 20, 110);
+    doc.text(": Rp. " + (data.cost.toLocaleString()) +",-" + "  (" + data.status.toUpperCase() +")"  , 60, 110);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    doc.line(10, 115, 200, 115);</span>
-<span class="cstat-no" title="statement not covered" >    doc.line(10, 116, 200, 116);</span>
+    doc.line(10, 115, 200, 115);
+    doc.line(10, 116, 200, 116);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    doc.save("services/report.pdf");</span>
+    doc.save("services/report.pdf");
 }
 &nbsp;
 module.exports = {generatePdf}</pre></td></tr></table></pre>
@@ -175,7 +175,7 @@ module.exports = {generatePdf}</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-08-18T00:39:17.053Z
+                at 2022-08-18T03:36:26.824Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

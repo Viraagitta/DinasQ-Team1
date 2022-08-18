@@ -6,9 +6,9 @@ const io = require('socket.io')(httpServer, {
 });
 io.on('connection', (socket) => {
     // all socket listener here
-    socket.on('send-message', (data) => {
+    socket.on('connect', (data) => {
       console.log(data);
-      io.emit('room-detail', data);
+      io.emit('update-list-letter', true);
     });
     socket.on('typing-start', (data) => {
       io.emit('typing-start', data);

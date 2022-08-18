@@ -22,16 +22,11 @@ app.use((req, res, next) => {
 });
 app.use(routes);
 app.use(errorHandler);
-io.on("connection", (socket) => {
-  socket.on("chat", ({ receiver, sender, message }) => {
-    io.emit(receiver, { sender, message });
-  });
-});
 
-
-if(process.env.NODE_ENV !== 'test'){
-app.listen(PORT, () => console.log(`Successfully connected to port ${PORT}`));
+if (process.env.NODE_ENV !== "test") {
+  server.listen(PORT, () =>
+    console.log(`Successfully connected to port ${PORT}`)
+  );
 }
 
-module.exports = app
-
+module.exports = app;

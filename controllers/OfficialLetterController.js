@@ -97,6 +97,7 @@ class OfficialLetterController {
         },
         { where: { id } }
       );
+      res.io.emit("update-status-letter", true);
       res.status(201).json({
         message: `Official letter status ${id} has been updated to ${status}`,
       });

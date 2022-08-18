@@ -13,6 +13,7 @@ class UserLocationController {
         longitude,
         cityName,
       });
+      res.io.emit("update-list-recent-loc", true)
       res
         .status(201)
         .json({ message: `Successfully checked in at ${cityName}` });
